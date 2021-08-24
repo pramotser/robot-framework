@@ -1,0 +1,22 @@
+{
+    "_id": "SHOP-2104230952",
+    "eclaimDate": "2021-07-07 23:59:59",
+    "status": "0",
+    "statusGroup": "1",
+    "imei": "3434802161432556",
+    "channel": "AISSHOP",
+    "groupChannelID": "2",
+    "receiptNo": "4289201200000738",
+    "orderNo": "DEMO2104190952",
+    "receiptDate": "2021-04-20 09:52:07",
+    "brand": "APPLE",
+    "model": "IPHONE",
+    "reasonCode": "001",
+    "createBy": "Tool",
+    "createDate": "2021-04-23 09:51",
+    "updateBy": "",
+    "updateDate": "",
+    "receiveBy": "",
+    "statusDate": "2021-04-23 15:28",
+    "customerName": "สมหญิง ยิงเรือ"
+}
