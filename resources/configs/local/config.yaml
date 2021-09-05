@@ -1,0 +1,6 @@
+db:
+  cosmos:
+    host:  afs-warehouse-db.mongo.cosmos.azure.com
+    port:  10255
+    username:  afs-warehouse-db
+    password:  pPxbrlpd6Cw9F60pieON5JgkeUrLjvXXB3XfaWyReMx54wmvYNX208WjKrP966AkHyC0WhxTDVvl2I2lZIulHQ==
