@@ -1,6 +1,11 @@
 name: "Build Image Robot"
 
 on:
+  push:
+    branches: 
+      - '*'
+    paths:
+      - dependencies/**
   workflow_dispatch:
   
 env:
