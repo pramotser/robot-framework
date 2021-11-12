@@ -5,7 +5,8 @@ on:
   
 env:
   CONTAINER_REGISTRY: pramotser
-  TAG_IMAGE: "0.0.1"
+  IMAGE_NAME: robot-framework
+  TAG_IMAGE_VERSION: "0.0.1"
 
 jobs:
   build:
@@ -26,4 +27,5 @@ jobs:
         with:
           context: ./dependencies/
           file: dependencies/Dockerfile
-          tags: ${{ env.CONTAINER_REGISTRY }}/robot-framework:${{ env.TAG_IMAGE }}
+          tags: ${{ env.CONTAINER_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG_IMAGE_VERSION }}
+          push: true
