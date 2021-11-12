@@ -28,4 +28,7 @@ jobs:
           context: ./dependencies/
           file: dependencies/Dockerfile
           tags: ${{ env.CONTAINER_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG_IMAGE_VERSION }}
-          push: true
+          push: false
+          
+      - name: "Push Image To Registry"
+        run: docker push ${{ env.CONTAINER_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG_IMAGE_VERSION }}
