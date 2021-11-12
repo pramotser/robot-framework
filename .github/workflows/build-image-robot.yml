@@ -21,17 +21,9 @@ jobs:
           username: ${{ secrets.DCR_USERNAME }}
           password: ${{ secrets.DCR_PASSWORD }}
       
-#       - name: "Build Image Robot Framework"
-#         uses: docker/build-push-action@v2
-#         with:
-#           context: ./dependencise/
-#           file: dependencies/Dockerfile
-#           tags: ${{ env.CONTAINER_REGISTRY }}/robot-framework:${{ env.TAG_IMAGE }}
-          
-      - name: "Build robot framework image"
+      - name: "Build Image Robot Framework"
         uses: docker/build-push-action@v2
         with:
           context: ./dependencies/
           file: dependencies/Dockerfile
-          tags: ${{ env.CONTAINER_REGISTRY }}/afs-robot-framework:${{ env.TAG_IMAGE }}
-          push: false
+          tags: ${{ env.CONTAINER_REGISTRY }}/robot-framework:${{ env.TAG_IMAGE }}
