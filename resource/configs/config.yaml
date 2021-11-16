@@ -1,0 +1,9 @@
+robot:
+  dir:
+    testcases: ./testcases
+    datas: ./datatests
+db:
+  connectionString: 
+  database: 
+  collection: 
+    member: afsTransaction
