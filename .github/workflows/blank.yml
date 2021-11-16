@@ -14,7 +14,7 @@ jobs:
     - run: |
         echo PR #${{ github.event }} has been merged
     - run: |
-        echo event type ${{ github.event }}
+        echo event type ${{ github.event.type }}
 
   close_job:
     # this job will only run if the PR has been closed without being merged
@@ -24,4 +24,4 @@ jobs:
     - run: |
         echo PR #${{ github.event.number }} has been closed without being merged
     - run: |
-        echo event type ${{ github.event }}
+        echo event type ${{ github.event.type }}
