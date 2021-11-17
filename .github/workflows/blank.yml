@@ -4,6 +4,8 @@ name: Close Pull Request
 on:
   pull_request:
     types: [ closed ]
+  push:
+    branches: [master]
 
 jobs:
   merge_job:
