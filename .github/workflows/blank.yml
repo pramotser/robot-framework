@@ -26,3 +26,9 @@ jobs:
         echo PR #${{ github.event.number }} has been closed without being merged
     - run: |
         echo event type ${{ toJson(github) }}
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Github Pull Request
+        uses: repo-sync/pull-request@master
+    
