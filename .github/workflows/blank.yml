@@ -6,6 +6,7 @@ on:
     types: [ closed ]
   push:
     branches: [master]
+  workflow_dispatch:
 
 jobs:
   merge_job:
